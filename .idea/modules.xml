@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CarangosApp/CarangosApp.iml" filepath="$PROJECT_DIR$/CarangosApp/CarangosApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CarangosAppProject.iml" filepath="$PROJECT_DIR$/CarangosAppProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_advenced.iml" filepath="$PROJECT_DIR$/android_advenced.iml" />
       <module fileurl="file://$PROJECT_DIR$/carangostunning/carangostunning.iml" filepath="$PROJECT_DIR$/carangostunning/carangostunning.iml" />
     </modules>
   </component>
