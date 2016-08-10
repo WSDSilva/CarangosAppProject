@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CarangosTunning</string>
+    <string name="server_uri">
+        http://carangos.herokuapp.com/%s
+    </string>
+    <string name="action_compra">
+        br.com.caelum.fj59.carangos.compra.Tunning
+    </string>
+    <string name="title_activity_tunning_compras">Carros tunados</string>
+</resources>

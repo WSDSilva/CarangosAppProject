@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.caelum.carangostunning">
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_camaro"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.TunningComprasActivity"
+            android:label="@string/title_activity_tunning_compras" >
+            <intent-filter>
+                <action android:name="br.com.caelum.fj59.carangos.compra.Tunning" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+
+</manifest>

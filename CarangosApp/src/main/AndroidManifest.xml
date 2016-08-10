@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.caelum.fj59.carangos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="br.com.caelum.fj59.carangos.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="br.com.caelum.fj59.carangos.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Para a app receber mensagens do GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- O GCM precisa acessar a conta google do aparelho -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Evita que o processador durma enquanto uma mensagem é recebida -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:name=".app.CarangosApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_camaro"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.com.caelum.fj59.carangos.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LeilaoActivity" />
+        <receiver
+            android:name=".gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="br.com.caelum.fj59.carangos" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
